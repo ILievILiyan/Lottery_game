@@ -7,8 +7,13 @@ profit = 0
 win_combination_set = set()
 player_numbers_list_str = []
 player_numbers_list_int = []
-type_of_game = input('Enter your preferred type of game [5/35], [6/42] or [6/49]: ')
+type_of_games_list = ["5/35", "6/42", "6/49"]
+correct_type_of_game = False
 
+type_of_game = " "
+while type_of_game not in type_of_games_list:
+    type_of_game = input('Enter valid type of game! [5/35], [6/42] or [6/49]: ')
+    continue
 
 while True:
     try:
