@@ -2,7 +2,7 @@ import random
 
 numbers_in_combination = 0
 total_numbers = 0
-counter_met = 0
+counter_met_numbers = 0
 profit = 0
 win_combination_set = set()
 player_numbers_list_str = []
@@ -53,19 +53,19 @@ player_numbers_list_int.sort()
 
 for every_number in range(numbers_in_combination):
     if player_numbers_list_int[every_number] in win_combination_list:
-        counter_met += 1
+        counter_met_numbers += 1
 
-if counter_met == 0:
+if counter_met_numbers == 0:
     print('Sorry, you don\'t have any matches and you lost your bet!')
-elif counter_met == 1:
-    print(f'Sorry, you have only {counter_met} match and you lost your bet!')
-elif counter_met < 3:
-    print(f'Sorry, you have only {counter_met} matches and you lost your bet!')
-elif counter_met >= 3:
-    print(f'Congratulations! You have {counter_met} match numbers!')
-    profit = player_bet ** (counter_met + total_numbers / counter_met)
+elif counter_met_numbers == 1:
+    print(f'Sorry, you have only {counter_met_numbers} match and you lost your bet!')
+elif counter_met_numbers < 3:
+    print(f'Sorry, you have only {counter_met_numbers} matches and you lost your bet!')
+elif counter_met_numbers >= 3:
+    print(f'Congratulations! You have {counter_met_numbers} match numbers!')
+    profit = player_bet ** (counter_met_numbers + total_numbers / counter_met_numbers)
     print(f'You win {profit:.2f}!')
-if counter_met < 6:
+if counter_met_numbers < 6:
     print(f'Win combination is {win_combination_list} '
       f'and your combination is {player_numbers_list_int}')
 else:
