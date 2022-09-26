@@ -8,7 +8,6 @@ win_combination_set = set()
 player_numbers_list_str = []
 player_numbers_list_int = []
 type_of_games_list = ["5/35", "6/42", "6/49"]
-correct_type_of_game = False
 
 type_of_game = " "
 while type_of_game not in type_of_games_list:
