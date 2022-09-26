@@ -7,7 +7,7 @@ profit = 0
 win_combination_set = set()
 player_numbers_list_str = []
 player_numbers_list_int = []
-type_of_game = input('Enter your prefer type of game [5/35], [6/42] or [6/49]: ')
+type_of_game = input('Enter your preferred type of game [5/35], [6/42] or [6/49]: ')
 
 
 while True:
